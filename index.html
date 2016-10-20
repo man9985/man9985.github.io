@@ -23,7 +23,9 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
 		<!-- Custom Fonts -->
-
+  <script src="https://use.typekit.net/zsj7hoa.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  
 		<!-- my styles -->
 	<link rel="stylesheet" href="styles.css">
 
@@ -39,14 +41,14 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarTarget">
                 <span class="sr-only">Toggle navigation</span><i class="fa fa-bars fa-2x"></i>
               </button>
-              <a href="#top"> 
+              <a class="navLink" href="#top"> 
               	<!-- nav home link -->
               	<i class="fa fa-home fa-4x"></i>
               </a>
             </div>
 
             	<!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse collapse" id="navbarTarget">
+            <div class="navbar-collapse collapse navLink" id="navbarTarget">
               <ul class="nav navbar-nav navbar-right">
                 <li>
                 	<a href="#portfolio">Portfolio</a>
@@ -58,7 +60,7 @@
                 	<a href="#contact">Contact</a>
                 </li>
               	<li>
-              		<a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+              		<a href="https://www.linkedin.com/in/matthewnaif"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
               		</a>
               	</li>
               	<li>	
@@ -78,14 +80,14 @@
 	    <div class="headerMain">
 	      <div class="headerContent">
 	        <h1>Hello, I'm Matt!</h1>
-	        	<!-- <img src=""> -->
+	         <img id="portPic" class="img-responsive text-center" src="portPic400x300.jpg"> 
 	        <hr>
 	        <p>Front-End Web Development and Design</p>
 	      </div>
 	    </div>
 	</header>
 
-	<section class ="container" id="aboutMe">
+	<section class ="container text-center" id="aboutMe">
 		<hr class="featurette-divider" id="about">
 
 	
@@ -115,10 +117,9 @@
 	<!-- Portfolio Heading -->
 
 	<div class="container-fluid" id="portExamples">
-
 		<div class="row" id="portfolio">
 			<div class="page-header">
-			  <h1 class="text-primary col-md-11">Portfolio<small> Here's some stuff I've done</small></h1>
+			  <h2 class="text-center">Portfolio<small> Here's some stuff I've done</small></h2>
 			</div>
 		</div>
 
@@ -129,14 +130,11 @@
     <div class="thumbnail">
       <img src="https://unsplash.it/200" alt="project1">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+        <h3>Kids Code</h3>
+        <p>Angular app our team made for our final project at Grand Circus. Teaching kids how to code with some basic html and css instruction. We chose to do this project because kids now grow up with the internet and we felt it is beneficial for them to know how websites are actually created!</p>
         <div class="btn-group btn-group-justified" role="group" aria-label="..."><!-- allows buttons to be next to each other in a row -->
-        <a href="#" class="btn btn-block btn-primary siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
-        <a href="#" class="btn btn-block btn-danger codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.kidscode.rocks" class="btn btn-block siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
+        <a href="https://github.com/leahpwatt/kids_code_app" class="btn btn-block codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -144,16 +142,13 @@
 
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://unsplash.it/200" alt="project1">
+      <img src="https://unsplash.it/200" alt="project2">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-        <div class="btn-group btn-group-justified" role="group" aria-label="..."><!-- allows buttons to be next to each other in a row -->
-        <a href="#" class="btn btn-block btn-primary"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
-        <a href="#" class="btn btn-block btn-danger"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
+        <h3>Custom Reddit Feed</h3>
+        <p>Using the JSON payload from /r/aww to create a custom Reddit feed.</p>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="http://mattnaif.com/Lab_11_JSON_Reddit/" class="btn btn-block siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
+        <a href="https://github.com/man9985/Lab_11_JSON_Reddit" class="btn btn-block codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -161,16 +156,13 @@
 
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://unsplash.it/200" alt="project1">
+      <img src="https://unsplash.it/200" alt="project3">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-        <div class="btn-group btn-group-justified" role="group" aria-label="..."><!-- allows buttons to be next to each other in a row -->
-        <a href="#" class="btn btn-block btn-primary"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
-        <a href="#" class="btn btn-block btn-danger"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
+        <h3>To Do List</h3>
+        <p>A simple to do list using Angular</p>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="http://mattnaif.com/Lab_12_Angular_toDoList/" class="btn btn-block siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
+        <a href="https://github.com/man9985/Lab_12_Angular_toDoList" class="btn btn-block codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -178,16 +170,13 @@
 
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://unsplash.it/200" alt="project1">
+      <img src="https://unsplash.it/200" alt="project4">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-        <div class="btn-group btn-group-justified" role="group" aria-label="..."><!-- allows buttons to be next to each other in a row -->
-        <a href="#" class="btn btn-block btn-primary"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
-        <a href="#" class="btn btn-block btn-danger"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
+        <h3>Angular Views</h3>
+        <p>Demonstrating features of Angular. Notice the page does not have to refresh when switching between pages.</p>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="http://mattnaif.com/lab_14_Multi-Views/#/cat" class="btn btn-block siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
+        <a href="https://github.com/man9985/lab_14_Multi-Views" class="btn btn-block codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -195,37 +184,37 @@
 
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://unsplash.it/200" alt="project1">
+      <img src="https://unsplash.it/200" alt="project5">
       <div class="caption">
-        <h3>Thumbnail label</h3>
+        <h3>Random Talking Angular App</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.</p>
-        <div class="btn-group btn-group-justified" role="group" aria-label="..."><!-- allows buttons to be next to each other in a row -->
-        <a href="#" class="btn btn-block btn-primary"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
-        <a href="#" class="btn btn-block btn-danger"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="http://mattnaif.com/lab_13_TalkingAngularApp/" class="btn btn-block siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
+        <a href="https://github.com/man9985/lab_13_TalkingAngularApp" class="btn btn-block codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="col-sm-6 col-md-4">
+  <!-- <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://unsplash.it/200" alt="project1">
+      <img src="https://unsplash.it/200" alt="project6">
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.</p>
-        <div class="btn-group btn-group-justified" role="group" aria-label="..."><!-- allows buttons to be next to each other in a row -->
-        <a href="#" class="btn btn-block btn-primary"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
-        <a href="#" class="btn btn-block btn-danger"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <a href="#" class="btn btn-block siteBtn"><i class="fa fa-desktop fa-lg" aria-hidden="true"></i> Check it out <i class="fa fa-laptop fa-lg" aria-hidden="true"></i></a> 
+        <a href="#" class="btn btn-block codeBtn"><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> See the code <i class="fa fa-code fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div> <!-- END Portfolio Examples -->
 </div>
 
@@ -235,30 +224,38 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <hr>
+                    <!-- <p>Contact me via your favorite avenue.</p> -->
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>                  
-                </div>
-                <div class="text-center">
-	                <form action="https://formspree.io/matthew.naif@gmail.com" method="POST">
-						    <input type="email" name="_replyto" placeholder="Your email">
-						    <textarea name="message" placeholder="Your message"></textarea>
-						    <input type="text" name="_gotcha" style="display:none" />
-						    <button type="submit">Send</button>
-					</form>
-				</div>
+
+                  <div class="col-lg-2 col-lg-offset-2 text-center">
+                      <a href="https://www.linkedin.com/in/matthewnaif"><i class="fa fa-linkedin-square fa-3x sr-contact"></i>
+                      <p>LinkedIn</p></a>
+                  </div>
+
+                  <div class="col-lg-2 col-lg-offset-1 text-center">
+                      <a href="https://github.com/man9985"><i class="fa fa-github fa-3x sr-contact"></i>
+                      <p>Github</p></a>
+                  </div>
+
+                  <div class="col-lg-2 col-lg-offset-1 text-center">
+                      <a href="mailto:matthew.naif@gmail.com"><i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                      <p>matthew.naif@gmail.com</p></a>
+                  </div>
             </div>
         </div>
+<hr>
+            <div>
+                <div class="container text-center">
+                  <form action="https://formspree.io/matthew.naif@gmail.com" method="POST">
+                    <input type="email" name="_replyto" placeholder="Your email">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <button type="submit">Send</button>
+                  </form>
+                </div>
+            </div>
     </section>
-
-<a href="#top">Back to Top</a>
 
 <!-- jQuery -->
 <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>

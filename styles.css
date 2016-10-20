@@ -1,24 +1,20 @@
+/* GLOBAL STYLES*/
+/*TODO: 
+about me text
+contact form styling
+background pic
+screenshots of projects
+clean up code
+*/
 /*Orange #DE4406;
 Off white background: rgb(237, 240, 245)
 */
-
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
+  color: #5a5a5a;
+  background: rgb(237, 240, 245);
 }
-
-.navbar {
-	background: rgba(255, 255, 255, 0.6);
-}
-
-/*.navLink, .navLink i {
-	color: black;	
-}
-
-.navLink:hover, .navLink li:hover {
-	color: orange;
-}*/
 
 header {
   position: relative;
@@ -41,7 +37,7 @@ header .headerMain {
   padding: 100px 15px 100px;
   width: 100%;
 }
-header .headerMain .headerContent h1 {
+header .headerMain .headerContent h1 {  /*comment*/
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -57,7 +53,21 @@ header .headerMain .headerContent p {
   font-size: 16px;
   margin-bottom: 50px;
 }
-/*@media (min-width: 768px) {
+
+.navbar {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.navLink i {
+	color: black;
+	opacity: 0.8;
+}
+
+.navLink i:hover {
+	color: #DE4406;
+}
+
+@media (min-width: 768px) {
   header {
     min-height: 100%;
   }
@@ -83,17 +93,8 @@ header .headerMain .headerContent p {
     margin-left: auto;
     margin-right: auto;
   }
-*/
-
-body {
-  color: #5a5a5a;
-  margin-bottom: 60px;
-  background: rgb(237, 240, 245);
 }
 
-#aboutMe {
-	text-align: center;
-}
 
 #portExamples {
 }
@@ -106,11 +107,20 @@ body {
 }
 
 .siteBtn {
-	background: orange;
+	background: #DE4406;
+	opacity: 0.8;
+	color: white;
 }
 
 .codeBtn {
 	background: black;
+	opacity: 0.8;
+	color: white;
+}
+
+.siteBtn:hover {
+	background: #DE4406;
+	opacity: none;
 }
 
 
@@ -118,12 +128,31 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0;  Space out the Bootstrap <hr> more 
 }
 
-/* Thin out the marketing headings */
+/* Thin out the marketing headings
 .featurette-heading {
-  font-weight: 300;
+  /*font-weight: 500;
   line-height: 1;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
+}*/
+
+h1 {
+	font-size: 100px;
+}
+
+h2 {
+	font-size: 60px;
+}
+
+#contact {
+	margin-bottom: 60px;
+}
+
+#portPic {
+	border-radius: 25%;
+	display: inline-block;
+	padding: 20px;
+	opacity: 0.8;
 }
