@@ -26,7 +26,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('images/header.jpg');
+  background-image: url('images/backlitKeyboardbw1900x1425.jpg');
   text-align: center;
   color: white;
 }
@@ -139,10 +139,9 @@ h2 {
 }
 
 #portPic {
-	border-radius: 25%;
+	border-radius: 50%;
 	display: inline-block;
 	padding: 20px;
-	opacity: 0.8;
 }
 
 .thumbnail {        /*custom height to make all portfolio examples the same size*/
