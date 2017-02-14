@@ -1,11 +1,10 @@
 /* GLOBAL STYLES*/
 /*TODO: 
 contact form styling
-background pic
-portfolio screenshot
+font families?
 */
 /*
-Color codes
+Color codes:
 Orange #DE4406 or rgb(222, 68, 6);
 Off white background: rgb(237, 240, 245)
 */
@@ -54,6 +53,10 @@ header .headerMain .headerContent p {
   margin-bottom: 50px;
 }
 
+.lead {
+  line-height: 1.5;
+}
+
 .navbar {
 	background: rgba(255, 255, 255, 0.6);
 }
@@ -71,39 +74,16 @@ header .headerMain .headerContent p {
 	font-weight: 800;
 }
 
-@media (min-width: 768px) {
-  header {
-    min-height: 100%;
-  }
-  header .headerMain {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
-  }
-  header .headerMain .headerContent {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  header .headerMain .headerContent h1 {
-    font-size: 50px;
-  }
-  header .headerMain .headerContent p {
-    font-size: 18px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .devicons {
-	font-size: 80px;
+	font-size: 75px;
 	text-align: center;
 	color: #DE4406;
 	opacity: 0.8; 
+}
+
+.devicons i:nth-child(odd) {
+  position: relative;
+  top: 75px;
 }
 
 .siteBtn {
@@ -151,4 +131,39 @@ h2 {
 
 #frontText {
 	font-weight: bold;
+}
+
+.underline {
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) { /*make port pic smaller?*/
+  header {
+    min-height: 100%;
+  }
+  header .headerMain {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .headerMain .headerContent {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .headerMain .headerContent h1 {
+    font-size: 50px;
+  }
+  header .headerMain .headerContent p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
